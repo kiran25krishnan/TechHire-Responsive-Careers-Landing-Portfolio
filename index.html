@@ -1,1 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechHire — Your Name | Frontend Portfolio</title>
+  <meta name="description" content="Portfolio & careers landing — responsive HTML/CSS demo for job applications." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Your Name</h1>
+        <p class="subtitle">Frontend Developer • Problem solver</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-left">
+        <h2>Designing performant, accessible web interfaces</h2>
+        <p>I build responsive HTML/CSS prototypes and production-ready UI components. Available for full-time roles and contract work.</p>
+        <p class="hero-ctas">
+          <a class="btn" href="Your_Resume.pdf" download>Download Resume</a>
+          <a class="btn btn-outline" href="#projects">View Projects</a>
+        </p>
+      </div>
+      <div class="hero-right">
+        <img src="images/profile-placeholder.png" alt="Your Name photo" class="profile-pic">
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About me</h3>
+      <p>4th-year EEE student (or replace) turned frontend developer. Skills: HTML, CSS, responsive design, accessibility, basic Git workflows.</p>
+
+      <div class="skills-grid">
+        <div>
+          <h4>Core</h4>
+          <ul>
+            <li>HTML5 & semantic markup</li>
+            <li>CSS3 — Flexbox & Grid</li>
+            <li>Responsive design</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Figma (basic)</li>
+            <li>Browser DevTools</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Selected projects</h3>
+
+      <div class="cards">
+        <article class="card">
+          <h4>Pizza Sales Dashboard (SQL + Dashboard)</h4>
+          <p>Data analysis project: SQL queries + interactive dashboard. (Link to repo)</p>
+          <a href="https://github.com/yourusername/pizza-sales-analysis" class="card-link">View Repo</a>
+        </article>
+
+        <article class="card">
+          <h4>Responsive Company Landing</h4>
+          <p>HTML/CSS landing page with mobile-first design and dark mode toggle.</p>
+          <a href="#" class="card-link">Live demo</a>
+        </article>
+
+        <article class="card">
+          <h4>UI Components Kit</h4>
+          <p>Buttons, forms and cards implemented with modular, accessible markup.</p>
+          <a href="#" class="card-link">Repository</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="careers" class="container careers">
+      <h3>Careers-like section</h3>
+      <p>Example job openings, perks and company culture highlights — useful to show you understand employer-facing pages.</p>
+
+      <div class="jobs-grid">
+        <div class="job">
+          <h4>Frontend Engineer</h4>
+          <p class="meta">Full-time • Bengaluru • Hybrid</p>
+          <ul>
+            <li>Build UI components and implement designs</li>
+            <li>Work with QA to ensure accessibility</li>
+          </ul>
+          <a class="btn btn-small" href="#">Apply</a>
+        </div>
+        <div class="job">
+          <h4>UI/UX Developer</h4>
+          <p class="meta">Contract • Remote</p>
+          <ul>
+            <li>Prototype and document design systems</li>
+          </ul>
+          <a class="btn btn-small" href="#">Apply</a>
+        </div>
+      </div>
+
+      <div class="perks">
+        <h4>Perks</h4>
+        <ul>
+          <li>Learning stipend</li>
+          <li>Flexible hours</li>
+          <li>Health coverage</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>If you'd like to talk, email me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>Or download my resume: <a href="Your_Resume.pdf" download>Download Resume</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — <a href="https://github.com/yourusername">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // small unobtrusive script to set year and add toggles (allowed; tiny)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
